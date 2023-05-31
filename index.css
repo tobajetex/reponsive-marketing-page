@@ -1,0 +1,187 @@
+*{
+   box-sizing: border-box 
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height:100vh;
+    display:grid;
+    place-items:center;
+    background-color: #E5E5E5
+}
+.container{
+    max-width:510px;
+    
+}
+.header {
+    width: 100%;
+    text-align: center;
+    color: white;
+    overflow:hidden;
+    background: linear-gradient(rgba(82,0,255,0.7),rgba(82,0,255,0.7)), url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin-bottom:-20px 
+    
+}
+
+.hero-header{
+    display:flex;
+    flex-direction:column;
+    margin:100px 40px;
+}
+
+ h1{
+    font-family: 'Bebas Neue', cursive;
+    font-weight:400 ;
+    font-size:64px ;
+    line-height:76.8px ;
+    color:#ffffff;
+}
+p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+
+
+}
+.main{
+    background-color:#ffffff;
+    padding:100px 0px;
+    
+    
+    
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+    
+}
+input{
+    width:427px;
+    height:65px;
+    margin-top:14px;
+    background-color: #EDEDED;
+    border: 1px solid #C7C7C7;
+}
+#btn{
+     width: 427px;
+     height:65px;
+     font-family: 'Poppins', sans-serif;
+      color:#ffffff;
+     background: #5200FF;
+     
+}
+div:nth-child(2){
+    margin-top:20px;
+    margin-bottom: 30px
+}
+label{
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+@media only screen and (min-width: 770px) {
+.container{
+   max-width:770px
+}
+.hero-header{
+    margin:100px 130px;
+}
+.form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    grid-row-gap: 56px;
+    width: 100%;
+    padding:0 40px
+    
+    
+    
+}
+input{
+  width:303px  
+}
+#btn{
+    width: 187px;
+    justify-self: left;
+    margin-left:20px
+    
+}
+div:nth-child(2){
+    margin:0;
+    
+}
+}
+
+@media only screen and (min-width: 1260px) {
+.container{
+    display:flex;
+    max-width:1260px;
+    height:100vh
+} 
+header{ 
+    max-width: 637px;
+    height:100%;
+    display: flex;
+    align-items:center;
+    padding:0;
+   
+}
+.hero-header{
+    max-width:70% ;
+    text-align: right;
+    margin:0;
+    
+    margin-left:auto;
+    padding-right:50px
+    
+    
+}
+p{
+    text-align: right
+}
+
+.main{
+     height:100vh ;
+     border:2px solid red;
+     padding: 0;
+     margin: 0;
+     width: 627px;
+     display:flex;
+     justify-content: center;
+     align-items:center;
+     
+}
+.form{
+    width:80%; 
+    height:60%;
+    display:grid;
+    place-items:center;
+    grid-template-columns: 1fr;
+    margin:0 auto
+}
+ 
+ input{
+  width:422px  
+}
+#btn{
+    width: 184px;
+    align-self:start;
+    
+    margin-left:0;
+
+    
+}  
+}
+
+
+
+
